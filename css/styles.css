@@ -1,0 +1,380 @@
+body {
+	font-family: 'Teko', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	background-image: url('../images/background.png');
+}
+
+/* HEADER */
+#header-nav {
+	background-color: #2F1004; 
+	height: 400px;
+	width: 100%;
+}
+
+#logo {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4em;
+	text-align: center;
+	margin-left: 150%;
+}
+.navbar-brand {
+	font-family: 'Major Mono Display', monospace;
+	margin-bottom: 15%;
+}
+
+.navbar-header a:link, .navbar-header a:visited, .vertical-menu a:link, .vertical-menu a:visited {
+	text-decoration: none;
+	color: #fff
+}
+.navbar-header a:hover, .vertical-menu a:hover {
+			text-decoration: none;
+			opacity: 50%;
+}
+
+
+.navbar-toggle {
+	background-color: black;
+	border-radius: 0;
+	box-shadow: 1px 1px 1px #fff;
+}
+.vertical-menu {
+	text-align: right;
+	list-style-type: none;
+	font-family: 'Major Mono Display', monospace;
+}
+/* END HEADER */
+
+/* HOMEPAGE */
+
+
+.container .jumbotron {
+	border: 3px solid #000000;
+	box-shadow: 10px 10px 10px #000000;
+}
+
+
+#work-tile, #info-tile, #experience-tile, #gallery-tile, #contact-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	overflow: hidden;
+	border: 3px solid #000000;
+	box-shadow: 10px 10px 10px #000000;
+}
+
+.zoom:hover, .zoom:hover, .zoom:hover, .zoom:hover, .zoom:hover {
+	
+	transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#work-tile {
+	background:url('../images/work_tile.png') no-repeat;
+	background-position: center;
+}
+#info-tile {
+	background:url('../images/info_tile.png') no-repeat;
+	background-position: center;
+}
+#experience-tile {
+	background:url('../images/experience_tile.png') no-repeat;
+	background-position: center;
+}
+#gallery-tile {
+	background:url('../images/gallery_tile.png') no-repeat;
+	background-position: center;
+}
+#contact-tile {
+	background:url('../images/contact_tile.png') no-repeat;
+	background-position: center;
+}
+
+#work-tile span, #info-tile span, #experience-tile span, #gallery-tile span, #contact-tile span {
+	font-family: 'Major Mono Display', monospace;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+ 
+/* END HOMEPAGE */
+
+/* FOOTER */
+.panel-footer {
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #E1DEDE; 
+	border-radius: 0;
+	border-top: 0;
+}
+.panel-footer div.row {
+	margin-bottom: 35px;
+}
+#social a:hover {
+	opacity: 30%;
+}
+
+#contatti a {
+	font-size: 1.3em;
+	color: #2F1004;
+}
+#contatti a:hover {
+	opacity: 30%;
+	text-decoration: none;
+	
+}
+#contatti span {
+	font-size: 1.3em;
+	color: #2F1004;
+	text-transform: uppercase;
+	line-height: 1.8em;
+	font-style: bold;
+	font-family: 'Teko', sans-serif;
+	text-shadow: 1px 1px 1px #222;
+}
+#affidabilità {
+	font-style: italic;
+	color:  #2F1004;
+}
+#affidabilità p:nth-child(2) {
+	margin-top: 25px;
+}
+
+/* END FOOTER */
+
+/* WORK PAGE */
+#work-content {
+	background-color: #fff;
+}
+
+ .paragrafo {
+ 	font-size: 1.3em;
+	margin-top: 5%;
+	margin-right: 25%;
+	margin-left: 25%;
+	color: #262627;
+	margin-top: 50px;
+	line-height: 1.5em;
+}	
+    h2, h3 {
+    font-family: 'Permanent Marker', cursive;
+	color: #112408;
+	opacity: 90%;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-style: bold;
+	text-shadow: 0px 1px 0px #222;
+	margin-top:5%;
+	margin-bottom: 0;
+}
+#descrizione:first-letter {
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 1px 1px 1px #000000;
+  display: block;
+  float: left;
+  font-weight: bold;
+  font-size: 4.4em;
+  line-height: 0.8em;
+  color: #112408;
+}
+
+/* END WORK PAGE */
+
+/* INFO PAGE */
+
+#info-content {
+	background-color: #fff;
+}
+ #info-description:first-letter {
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 1px 1px 1px #000000;
+  display: block;
+  float: left;
+  font-weight: bold;
+  font-size: 4.4em;
+  line-height: 0.8em;
+  color: #112408;
+ }
+#personal-picture {
+	width: 50%;
+	box-shadow: 10px 10px 10px #000000;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	border:2px solid #3A3A3A;
+}
+#fotografo {
+	background-image: url('../images/photographer.png');
+}
+.figure-img {
+	width: 50%;
+	box-shadow: 10px 10px 10px #000000;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	border:2px solid #3A3A3A;
+}
+
+.figure-caption {
+	font-family: 'Permanent Marker', cursive;
+	color: #000000;
+	font-size: 1.4em;
+	text-shadow: 1px 1px 1px #222;
+
+}
+/* END INFO PAGE */
+
+/* EXPERIENCE PAGE */
+#experience-content {
+	background-color: #fff;
+}
+ #experience-description:first-letter {
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 1px 1px 1px #000000;
+  display: block;
+  float: left;
+  font-weight: bold;
+  font-size: 4.4em;
+  line-height: 0.8em;
+  color: #112408;
+ }
+ #dublin-centre {
+ 	background:url('../images/ireland.png') no-repeat;
+	background-position: center;
+ }
+
+/* END EXPERIENCE CATEGORY */
+
+/* GALLERY CATEGORY */
+#gallery-content .figure-caption {
+	font-family: 'Permanent Marker', cursive;
+	color: #690808;	
+	font-size: 1.4em;
+	text-shadow: 1px 1px 1px #222;
+}
+#gallery-content {
+	background-color: #fff;
+}
+
+#valencia-view {
+	background-image: url('../images/oceanografic.png');
+}
+#hk {
+	background-image: url('../images/hong-kong.png');
+}
+#london {
+	background-image: url('../images/londra.png');
+}
+#sicily {
+	background-image: url('../images/favignana.png');
+}
+#capri-island {
+	background-image: url('../images/capri.png');
+}
+#sorrento-view {
+	background-image: url('../images/sorrento.png');
+}
+#rome-castle {
+	background-image: url('../images/roma.png');
+}
+#milan {
+	background-image: url('../images/milano.png');
+}
+#firenze-bridge {
+	background-image: url('../images/firenze.png');
+}
+#bologna-view {
+	background-image: url('../images/bologna.png');
+}
+/* END GALLERY CATEGORY */
+
+/*CONTACT CATEGORY */
+#contact-content {
+	background-color: #fff;
+}
+#contact-content h2 {
+	margin-bottom: 5%;
+}
+#contact-content p {
+	margin-bottom: 10%;
+	color: #690808;
+	font-size: 4em;
+}
+#contact-content a:hover, #contact-content a:visited, #contact-content a:focus, #contact-content a:active {
+	text-decoration: none;
+}
+/******* large devices only ********/
+/*HEADER*/
+@media (min-width: 1200px) {
+.navbar-brand {
+	margin-right: 2em;
+	margin-top: -30%;
+}
+.vertical-menu {
+	font-size: 1.5em;
+}
+}
+
+
+
+/********* medium devices only ********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	/* HEADER */
+	.navbar-brand {
+	margin-top: -30%;
+}
+.vertical-menu {
+	margin-right: -4%;
+	font-size: 1.5em;
+	}
+}
+
+
+/********* small devices only *****/
+@media (min-width: 768px) and (max-width: 991px) {
+		/* HEADER */
+		.vertical-menu {
+			margin-right: -4%;
+			font-size: 1.5em;
+	}
+
+}
+
+
+/******** extra small devices only ******/
+@media (max-width: 767px) {
+	.navbar-brand {
+		margin-top: -4%;
+	}
+	.vertical-menu {
+			margin-right: -2%;
+			font-size: 1.5em;
+	}
+}
+
+
+/****** super extra small devices only *********/
+@media (max-width: 479px) {
+	/* HEADER */
+.navbar-brand {
+	margin-bottom: 5%;
+	width: 20%;
+	height: 20%;	
+}
+.vertical-menu {
+	margin-right: -2%;
+	line-height: 2.5em;
+	font-size: 1em;
+}
+ /* END HEADER */
+
+ /* CONTACT PAGE */
+ #button-email > p {
+ 	font-size: 250%;
+ }
+}
