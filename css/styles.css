@@ -209,9 +209,6 @@ body {
 	margin-bottom: 10%;
 	border:2px solid #3A3A3A;
 }
-#fotografo {
-	background-image: url('../images/photographer.png');
-}
 .figure-img {
 	width: 50%;
 	box-shadow: 10px 10px 10px #000000;
@@ -259,37 +256,6 @@ body {
 }
 #gallery-content {
 	background-color: #fff;
-}
-
-#valencia-view {
-	background-image: url('../images/oceanografic.png');
-}
-#hk {
-	background-image: url('../images/hong-kong.png');
-}
-#london {
-	background-image: url('../images/londra.png');
-}
-#sicily {
-	background-image: url('../images/favignana.png');
-}
-#capri-island {
-	background-image: url('../images/capri.png');
-}
-#sorrento-view {
-	background-image: url('../images/sorrento.png');
-}
-#rome-castle {
-	background-image: url('../images/roma.png');
-}
-#milan {
-	background-image: url('../images/milano.png');
-}
-#firenze-bridge {
-	background-image: url('../images/firenze.png');
-}
-#bologna-view {
-	background-image: url('../images/bologna.png');
 }
 /* END GALLERY CATEGORY */
 
