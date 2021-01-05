@@ -8,8 +8,7 @@ body {
 /* HEADER */
 #header-nav {
 	background-color: #2F1004; 
-	height: 400px;
-	width: 100%;
+
 }
 
 #logo {
@@ -31,7 +30,6 @@ body {
 			text-decoration: none;
 			opacity: 50%;
 }
-
 
 .navbar-toggle {
 	background-color: black;
@@ -140,7 +138,6 @@ body {
 	text-shadow: 1px 1px 1px #222;
 }
 #affidabilità {
-	font-style: italic;
 	color:  #2F1004;
 }
 #affidabilità p:nth-child(2) {
@@ -315,7 +312,14 @@ body {
 	}
 	.vertical-menu {
 			margin-right: -2%;
-			font-size: 1.5em;
+			font-size: 1.2em;
+			line-height: 200%;
+	}
+	#collapsable-nav {
+	background-color: #A31717;
+}
+	#home-tiles {
+		width: 75%;
 	}
 }
 
@@ -334,6 +338,12 @@ body {
 	font-size: 1em;
 }
  /* END HEADER */
+
+
+/* MAIN CONTENT */
+#home-tiles {
+	width: 100%;
+}
 
  /* CONTACT PAGE */
  #button-email > p {
