@@ -204,7 +204,7 @@ body {
 
 /* EXPERIENCE PAGE */
 #experience-content {
-	background-color: #93F5BF;
+	background-color: #E5E2CE;
 }
  #experience-description:first-letter {
   font-family: 'Permanent Marker', cursive;
@@ -228,7 +228,7 @@ body {
 
 /*CONTACT CATEGORY */
 #contact-content {
-	background-color: #E7A95C;
+	background-color: #fff;
 }
 #contact-content h2 {
 	margin-bottom: 5%;
@@ -294,6 +294,10 @@ body {
 }
 	#home-tiles {
 		width: 75%;
+	}
+
+	#loading {
+		width: 50%;
 	}
 }
 
