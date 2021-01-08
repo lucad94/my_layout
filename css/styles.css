@@ -3,38 +3,116 @@ body {
 	font-size: 16px;
 	color: #fff;
 	background-image: url('../images/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+/* STILE HOVER PER MAIN LOGO */
+.ch-item {
+width: 100%;
+height: 100%;
+border-radius: 50%;
+position: relative;
+box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+cursor: default;
+}
+.ch-info{
+position: absolute;
+width: 180px;
+height: 180px;
+border-radius: 50%;
+}
+.ch-info-wrap {
+top: 20px;
+left: 20px;
+background: #E85D21 url('../images/main_logo.png');
+box-shadow:
+0 0 0 20px rgba(255,255,255,0.2),
+inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+.ch-info > div {
+display: block;
+position: absolute;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background-position: center center;
+}
+.ch-info .ch-info-front {
+transition: all 0.6s ease-in-out;
+}
+.ch-info .ch-info-back {
+opacity: 0;
+background: #000000;
+pointer-events: none;
+transform: scale(1.5);
+transition: all 0.4s ease-in-out 0.2s;
+}
+.ch-img-1 {
+background-image: url('../images/main_logo.png');
+}
+.ch-info h4 a {
+color: #fff;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 1.3em;
+margin: 0 15px;
+padding: 20px 0 0 0;
+height: 20px;
+font-style: bold;
+}
+.ch-info p {
+color: #fff;
+padding: 10px 5px 0;
+margin: 0 30px;
+font-size: 1.5em;
+border-top: 1px solid rgba(255,255,255,0.5);
+display: block;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+.ch-info h4 a:hover {
+text-decoration: none;
+}
+.ch-item:hover .ch-info-front {
+transform: scale(0);
+opacity: 0;
+}
+.ch-item:hover .ch-info-back {
+transform: scale(1);
+opacity: 1;
+pointer-events: auto;
+}
+/* FINE STILE HOVER PER MAIN LOGO */
+
 
 /* HEADER */
 #header-nav {
-	background-color: #2F1004; 
+	background-color: #000000;
 
 }
 
-#logo {
-	font-family: 'Permanent Marker', cursive;
-	font-size: 4em;
-	text-align: center;
-	margin-left: 150%;
-}
-.navbar-brand {
-	font-family: 'Major Mono Display', monospace;
-	margin-bottom: 15%;
-}
-
-.navbar-header a:link, .navbar-header a:visited, .vertical-menu a:link, .vertical-menu a:visited {
+.vertical-menu a:link, .vertical-menu a:visited {
 	text-decoration: none;
-	color: #fff
+	color: #fff;
 }
-.navbar-header a:hover, .vertical-menu a:hover {
+ .vertical-menu a:hover {
 			text-decoration: none;
 			opacity: 50%;
+			color: #fff;
 }
 
 .navbar-toggle {
-	background-color: black;
-	border-radius: 0;
-	box-shadow: 1px 1px 1px #fff;
+  padding: 15px 25px;
+  margin-bottom: 5%;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px #999;
 }
 .vertical-menu {
 	text-align: right;
@@ -46,23 +124,16 @@ body {
 /* HOMEPAGE */
 
 
-.container .jumbotron {
-	border: 3px solid #000000;
-	box-shadow: 10px 10px 10px #000000;
-}
-
-
 #work-tile, #info-tile, #experience-tile, #gallery-tile, #contact-tile {
 	height: 250px;
 	width: 100%;
 	margin-bottom: 15px;
 	position: relative;
 	overflow: hidden;
-	border: 3px solid #000000;
-	box-shadow: 10px 10px 10px #000000;
+	border: 1px solid #000000;
 }
 
-.zoom:hover, .zoom:hover, .zoom:hover, .zoom:hover, .zoom:hover {
+.zoom:hover {
 	
 	transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
@@ -135,7 +206,6 @@ body {
 	line-height: 1.8em;
 	font-style: bold;
 	font-family: 'Teko', sans-serif;
-	text-shadow: 1px 1px 1px #222;
 }
 #affidabilità {
 	color:  #2F1004;
@@ -148,7 +218,7 @@ body {
 
 /* WORK PAGE */
 #work-content {
-	background-color: #F4E7B6;
+	background-color: #E6E6E6;
 }
 
  .paragrafo {
@@ -161,18 +231,17 @@ body {
 	line-height: 1.5em;
 }	
     h2, h3 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Major Mono Display', monospace;
 	color: #112408;
 	opacity: 90%;
 	font-size: 1.5em;
 	text-transform: uppercase;
 	font-style: bold;
-	text-shadow: 0px 1px 0px #222;
 	margin-top:5%;
 	margin-bottom: 0;
 }
 #descrizione:first-letter {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Major Mono Display', monospace;
   text-shadow: 1px 1px 1px #000000;
   display: block;
   float: left;
@@ -187,10 +256,10 @@ body {
 /* INFO PAGE */
 
 #info-content {
-	background-color: #B6E7F4;
+	background-color: #fff;
 }
  #info-description:first-letter {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Major Mono Display', monospace;
   text-shadow: 1px 1px 1px #000000;
   display: block;
   float: left;
@@ -204,10 +273,10 @@ body {
 
 /* EXPERIENCE PAGE */
 #experience-content {
-	background-color: #E5E2CE;
+	background-color: #E6E6E6;
 }
  #experience-description:first-letter {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Major Mono Display', monospace;
   text-shadow: 1px 1px 1px #000000;
   display: block;
   float: left;
@@ -228,7 +297,7 @@ body {
 
 /*CONTACT CATEGORY */
 #contact-content {
-	background-color: #fff;
+	background-color: #E6E6E6;
 }
 #contact-content h2 {
 	margin-bottom: 5%;
@@ -244,10 +313,7 @@ body {
 /******* large devices only ********/
 /*HEADER*/
 @media (min-width: 1200px) {
-.navbar-brand {
-	margin-right: 2em;
-	margin-top: -30%;
-}
+
 .vertical-menu {
 	font-size: 1.5em;
 }
@@ -258,11 +324,9 @@ body {
 /********* medium devices only ********/
 @media (min-width: 992px) and (max-width: 1199px) {
 	/* HEADER */
-	.navbar-brand {
-	margin-top: -30%;
-}
+
 .vertical-menu {
-	margin-right: -4%;
+	margin-right: 5%;
 	font-size: 1.5em;
 	}
 }
@@ -272,7 +336,7 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
 		/* HEADER */
 		.vertical-menu {
-			margin-right: -4%;
+			margin-right: 10%;
 			font-size: 1.5em;
 	}
 
@@ -281,16 +345,14 @@ body {
 
 /******** extra small devices only ******/
 @media (max-width: 767px) {
-	.navbar-brand {
-		margin-top: -4%;
-	}
+
 	.vertical-menu {
 			margin-right: -2%;
 			font-size: 1.2em;
 			line-height: 200%;
 	}
 	#collapsable-nav {
-	background-color: #A31717;
+	background-color: #6B6B6B;
 }
 	#home-tiles {
 		width: 75%;
@@ -299,17 +361,21 @@ body {
 	#loading {
 		width: 50%;
 	}
+	.nome a {
+		color: #fff;
+		text-decoration: none;
+		display: block;
+		width: 50%;
+		font-size: 1.8em;
+		font-family: 'Major Mono Display', monospace;
+	}
 }
 
 
 /****** super extra small devices only *********/
 @media (max-width: 479px) {
 	/* HEADER */
-.navbar-brand {
-	margin-bottom: 5%;
-	width: 20%;
-	height: 20%;	
-}
+
 .vertical-menu {
 	margin-right: -2%;
 	line-height: 2.5em;
