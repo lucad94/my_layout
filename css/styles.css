@@ -21,14 +21,6 @@ width: 180px;
 height: 180px;
 border-radius: 50%;
 }
-.ch-info-wrap {
-top: 20px;
-left: 20px;
-background: #E85D21 url('../images/main_logo.png');
-box-shadow:
-0 0 0 20px rgba(255,255,255,0.2),
-inset 0 0 3px rgba(115,114, 23, 0.8);
-}
 .ch-info > div {
 display: block;
 position: absolute;
@@ -101,23 +93,25 @@ pointer-events: auto;
 			color: #fff;
 }
 
-.navbar-toggle {
-  padding: 15px 25px;
-  margin-bottom: 5%;
-  cursor: pointer;
-  text-align: center;	
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #fff;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 2px #999;
+.btn-flat {
+    border-style: none;
+    background-color: #fff;
+    color:white;
+    padding: 15px 25px 15px 25px;
+    font-size:15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-flat:active {
+	background-color:white;
+    color: #fff;
+    transition:1s all;
+    border: solid 1px #fff;
 }
 .vertical-menu {
 	text-align: right;
 	list-style-type: none;
-	font-family: 'Major Mono Display', monospace;
+	font-family: 'Goldman', cursive;
 }
 /* END HEADER */
 
@@ -160,7 +154,7 @@ pointer-events: auto;
 }
 
 #work-tile span, #info-tile span, #experience-tile span, #gallery-tile span, #contact-tile span {
-	font-family: 'Major Mono Display', monospace;
+	font-family: 'Goldman', cursive;
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -231,7 +225,7 @@ pointer-events: auto;
 	line-height: 1.5em;
 }	
     h2, h3 {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Goldman', cursive;
 	color: #112408;
 	opacity: 90%;
 	font-size: 1.5em;
@@ -241,7 +235,7 @@ pointer-events: auto;
 	margin-bottom: 0;
 }
 #descrizione:first-letter {
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Goldman', cursive;
   text-shadow: 1px 1px 1px #000000;
   display: block;
   float: left;
@@ -259,7 +253,7 @@ pointer-events: auto;
 	background-color: #fff;
 }
  #info-description:first-letter {
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Goldman', cursive;
   text-shadow: 1px 1px 1px #000000;
   display: block;
   float: left;
@@ -276,7 +270,7 @@ pointer-events: auto;
 	background-color: #E6E6E6;
 }
  #experience-description:first-letter {
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Goldman', cursive;
   text-shadow: 1px 1px 1px #000000;
   display: block;
   float: left;
@@ -361,14 +355,7 @@ pointer-events: auto;
 	#loading {
 		width: 50%;
 	}
-	.nome a {
-		color: #fff;
-		text-decoration: none;
-		display: block;
-		width: 50%;
-		font-size: 1.8em;
-		font-family: 'Major Mono Display', monospace;
-	}
+
 }
 
 
