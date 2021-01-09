@@ -2,7 +2,7 @@ body {
 	font-family: 'Teko', sans-serif;
 	font-size: 16px;
 	color: #fff;
-	background-image: url('../images/background.png');
+	background-image: url('../images/background.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -117,6 +117,9 @@ pointer-events: auto;
 
 /* HOMEPAGE */
 
+#work-tile:focus, #info-tile:focus, #experience-tile:focus, #gallery-tile:focus, #contact-tile:focus {
+	opacity: 99%;
+}
 
 #work-tile, #info-tile, #experience-tile, #gallery-tile, #contact-tile {
 	height: 250px;
@@ -124,46 +127,52 @@ pointer-events: auto;
 	margin-bottom: 15px;
 	position: relative;
 	overflow: hidden;
-	border: 1px solid #000000;
+	opacity: 50%;
 }
 
 .zoom:hover {
 	
 	transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+#work-tile:hover, #info-tile:hover, #experience-tile:hover, #gallery-tile:hover, #contact-tile:hover {
+	opacity: 99%;
+}
 
 #work-tile {
-	background:url('../images/work_tile.png') no-repeat;
+	background:url('../images/work_tile.svg') no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 #info-tile {
-	background:url('../images/info_tile.png') no-repeat;
+	background:url('../images/info_tile.svg') no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 #experience-tile {
-	background:url('../images/experience_tile.png') no-repeat;
+	background:url('../images/experience_tile.svg') no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 #gallery-tile {
-	background:url('../images/gallery_tile.png') no-repeat;
+	background:url('../images/gallery_tile.svg') no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 #contact-tile {
-	background:url('../images/contact_tile.png') no-repeat;
+	background:url('../images/contact_tile.svg') no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 
-#work-tile span, #info-tile span, #experience-tile span, #gallery-tile span, #contact-tile span {
+#work-tile p, #info-tile p, #experience-tile p, #gallery-tile p, #contact-tile p {
 	font-family: 'Goldman', cursive;
 	position: absolute;
 	bottom: 0;
-	right: 0;
-	width: 100%;
+	right: 50%;
+	width: 25%;
 	text-align: center;
 	font-size: 1.6em;
-	background-color: #000;
-	color: #fff;
-	opacity: .8;
+	color: #000000;
 }
  
 /* END HOMEPAGE */
@@ -339,7 +348,7 @@ pointer-events: auto;
 
 /******** extra small devices only ******/
 @media (max-width: 767px) {
-
+	/* HEADER */
 	.vertical-menu {
 			margin-right: -2%;
 			font-size: 1.2em;
@@ -354,6 +363,13 @@ pointer-events: auto;
 
 	#loading {
 		width: 50%;
+	}
+	/* HEADER */
+
+	/* MAIN CONTENT */
+	#work-tile, #info-tile, #experience-tile, #gallery-tile, #contact-tile {
+		margin-bottom: 20%;
+
 	}
 
 }
