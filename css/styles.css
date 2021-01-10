@@ -118,7 +118,7 @@ pointer-events: auto;
 /* HOMEPAGE */
 
 #work-tile:focus, #info-tile:focus, #experience-tile:focus, #gallery-tile:focus, #contact-tile:focus {
-	opacity: 99%;
+	opacity: 100%;
 }
 
 #work-tile, #info-tile, #experience-tile, #gallery-tile, #contact-tile {
@@ -135,7 +135,7 @@ pointer-events: auto;
 	transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 #work-tile:hover, #info-tile:hover, #experience-tile:hover, #gallery-tile:hover, #contact-tile:hover {
-	opacity: 99%;
+	opacity: 100%;
 }
 
 #work-tile {
@@ -355,7 +355,7 @@ pointer-events: auto;
 			line-height: 200%;
 	}
 	#collapsable-nav {
-	background-color: #6B6B6B;
+	background-color: #000000;
 }
 	#home-tiles {
 		width: 75%;
