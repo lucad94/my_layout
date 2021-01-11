@@ -44,3 +44,17 @@ $(function () {
 
 
 })(window);
+
+window.addEventListener ("scroll",function(){
+
+if (window.pageYOffset>200) {
+document.getElementById ("tornasu").style.display= "block";
+}
+
+else if (window.pageYOffset<200) {
+document.getElementById ("tornasu").style.display= "none";
+}
+
+val[0].innerHTML= "PageYOffset = "+window.pageYOffset
+},!1);
+
