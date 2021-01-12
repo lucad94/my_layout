@@ -16,11 +16,21 @@
 
 <body>
 <a name="inizio"></a>
-<header>
-    <nav id="header-nav" class="navbar navbar-default">
-        <div class="container">
-        <div class="navbar-header">
-                    <div class="ch-item ch-img-1 hidden-xs">
+<input type="checkbox" id="nav-toggle" hidden>
+<nav class="nav"><label for="nav-toggle" class="nav-toggle" onclick></label>
+<ul>
+<li><a href="work-category.html">Idea & Proposta</a></li>
+<li><a href="info-category.html">Blog</a></li>
+<li><a href="experience-category.html">Esperienza</a></li>
+<li><a href="gallery-category.html">Novità</a></li>                
+<li><a href="contact-category.html">Social</a></li>
+</ul>
+</nav>
+<div class="mask-content"></div>
+<nav id="header-nav" class="navbar navbar-default">
+    <div class="container">
+    <div class="navbar-header">
+    <div class="ch-item ch-img-1">
                             <div class="ch-info">
                                 <div class="ch-info-front ch-img-1"></div>
                                 <div class="ch-info-back">
@@ -28,47 +38,14 @@
                                     <p class="text-center">personal website</p>
                              </div>
                         </div>
-                    </div>
-                    <div class="visible-xs pull-left"><a href="index.html"><img src="images/main_logo.svg"></a></div>
-                  <button id="navbarToggle" type="button" class="navbar-toggle collapsed btn-flat" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-               </div>
-                 
-                 <div id="collapsable-nav" class="collapse navbar-collapse">
-                    <ul id="nav-list" class="vertical-menu">
-                            <li>
-                                <a href="work-category.html">
-                                <br class="hidden-xs">Idea & Proposta</a>
-                                </li>
-                            <li>
-                                <a href="info-category.html">
-                                <br class="hidden-xs">Biografia</a>
-                                </li>
-                                    <li>
-                                        <a href="experience-category.html">
-                                         <br class="hidden-xs">Esperienza</a>
-                                      </li>
-                                      <li>
-                                        <a href="gallery-category.html">
-                                          <br class="hidden-xs">Novità</a>
-                                        </li>                
-                                      <li>
-                                        <a href="contact-category.html">
-                                        <br class="hidden-xs">Social</a>
-                                    </li>
-                                    </ul><!-- #nav-list -->
-                                </div><!-- .collapse .navbar-collapse -->
-                             </div><!-- .container -->
-                         </nav><!-- #header-nav -->
-                  </header>
+                    </div> 
+                </div>
+            </div> 
+        </nav> 
 
-                      <div id="work-content" class="container">
+                      <div class="container work-content">
                        <h2 class="text-center">L'idea di sito</h2>
-                        <p class="paragrafo" id="descrizione">
+                        <p class="paragrafo description">
                         Un sito web riflette la nostra <b>identità digitale</b>, ci consente di metterci in mostra
                         e di proporci in un mondo che si affida sempre di più alla rete internet. Essa infatti presenta <b>aspetti incredibili</b> che a breve andrò ad elencare.
                         </p>
@@ -94,7 +71,7 @@
                             Beh in ogni caso metterà in mostra il vostro progetto o la vostra immagine, aumentando i contatti che vi servono a raggiungere il vostro scopo. In alternativa potete vendere spazi pubblicitari o prodotti digitali da voi realizzati.</p>
                             <h3 class="text-center">Cosa c'è da sapere</h3>
                             <p class="paragrafo">
-                            Al netto di quanto appena detto la mia proposta è quella di creare <b>siti web
+                            Al netto di quanto appena detto il mio obiettivo è quello di creare <b>siti web
                             semplici, intuitivi, completi e sopratutto responsive</b>. Cosa vuol dire responsive? Con la parola 
                             responsive intendiamo un sito adattabile a più dispositivi. Al giorno d'oggi il numero di dispositivi elettronici a disposizione è altissimo, ed è per questo che un sito web deve poter adattarsi a schermi di dimensioni differenti mantenendo comunque l'esperienza utente gradevole. Fantastico no?
                             Provate voi stessi ad aprire questo sito da uno smartphone e da un computer. Noterete che l'interfaccia cambia ma rimane comunque semplice da utilizzare.</p>
@@ -108,37 +85,34 @@
 
 
 
-                <footer class="panel-footer">
-                	<div class="container">
-                		<div class="row">
-                			<section id="social" class="col-sm-4">
-                              <div id="button-whatsapp" class="pull-left">
+                    <footer class="panel-footer">
+                    <div class="container">
+                        <div class="row">
+                            <section class="col-sm-4 social">
+                              <div class="pull-left">
                                 <a href="https://wa.me/+393494751895" target="blank"><img src="images/whatsapp_button.svg"> 
                                 </a>
                               </div>
-                            <div id="button-instagram">
+                              <div>
                                <a href="https://www.instagram.com/mr.lucadavanzo" target="blank"><img src="images/instagram_button.svg">
                                 </a>
                             </div>
-                            <div id="button-email">
+                            <div>
                                 <a href="mailto:lucadavanzo94@hotmail.it"><img src="images/email_button.svg">
                                 </a>
                             </div>
                             <hr class="visible-xs">
-                		</section>
-                			  <section id="contatti" class="col-sm-4">
-                                <span>Cellulare</span><br><a href="tel:+ 39 3494751895">+ 39 3494751895</a><br>
-                                <span>Email</span><br>
-                                    <a href="mailto:lucadavanzo94@hotmail.it">lucadavanzo94@hotmail.it</a>                      
-                             <hr class="visible-xs">
                             </section>
-                			<section id="affidabilità" class="col-sm-4">
-                				<span>Informazioni</span>
-                        <p>Questo sito è stato pensato, progettato e realizzato unicamente dal sottoscritto, utilizzando HTML, CSS e Javascript. I miei siti web vengono pensati inizialmente per la versione desktop e in fase di costruzione adattati alla versione mobile. Le parole d'ordine sono: velocità, semplicità ed eleganza.</p>
-                        <p>&copy; Tutti i diritti riservati. Copyright mr.lucadavanzo 2021</p>
-                			</section>
-                		</div>
-                	</div>
+                            <section class="col-sm-4 copyright">
+                                <p>Breve introduzione al mio sito web personale:</p>
+                                <p>Un modo professionale e alternativo per presentare se stessi. Con questo sito web voglio illustrare il mio pensiero e le mie idee di design applicando le mie passioni: fotografia e web developing, mostrando l'ordine e organizzazione che mi contraddistingue. </p>
+                            </section>
+                            <section class="col-sm-4 copyright">
+                                <p>Questo sito è stato pensato, progettato e realizzato unicamente dal sottoscritto, utilizzando HTML, CSS e Javascript. I miei siti web vengono sviluppati inizialmente per la versione desktop e in fase di costruzione adattati alla versione mobile. Le parole d'ordine sono: velocità, semplicità ed eleganza.</p>
+                                <p>&copy; Tutti i diritti riservati. Copyright mr.lucadavanzo 2021</p>
+                            </section>
+                        </div>
+                    </div>
                 </footer>
             <a href="#inizio">
             <div id="tornasu">

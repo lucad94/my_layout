@@ -16,11 +16,21 @@
 
 <body>
 <a name="inizio"></a>
-<header>
-    <nav id="header-nav" class="navbar navbar-default">
-        <div class="container">
-        <div class="navbar-header">
-                    <div class="ch-item ch-img-1 hidden-xs">
+<input type="checkbox" id="nav-toggle" hidden>
+<nav class="nav"><label for="nav-toggle" class="nav-toggle" onclick></label>
+<ul>
+<li><a href="work-category.html">Idea & Proposta</a></li>
+<li><a href="info-category.html">Blog</a></li>
+<li><a href="experience-category.html">Esperienza</a></li>
+<li><a href="gallery-category.html">Novità</a></li>                
+<li><a href="contact-category.html">Social</a></li>
+</ul>
+</nav>
+<div class="mask-content"></div>
+<nav id="header-nav" class="navbar navbar-default">
+    <div class="container">
+    <div class="navbar-header">
+    <div class="ch-item ch-img-1">
                             <div class="ch-info">
                                 <div class="ch-info-front ch-img-1"></div>
                                 <div class="ch-info-back">
@@ -28,50 +38,18 @@
                                     <p class="text-center">personal website</p>
                              </div>
                         </div>
-                    </div>
-                    <div class="visible-xs pull-left"><a href="index.html"><img src="images/main_logo.svg"></a></div>
-                  <button id="navbarToggle" type="button" class="navbar-toggle collapsed btn-flat" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-               </div>
-                 
-                 <div id="collapsable-nav" class="collapse navbar-collapse">
-                    <ul id="nav-list" class="vertical-menu">
-                            <li>
-                                <a href="work-category.html">
-                                <br class="hidden-xs">Idea & Proposta</a>
-                                </li>
-                            <li>
-                                <a href="info-category.html">
-                                <br class="hidden-xs">Biografia</a>
-                                </li>
-                                    <li>
-                                        <a href="experience-category.html">
-                                         <br class="hidden-xs">Esperienza</a>
-                                      </li>
-                                      <li>
-                                        <a href="gallery-category.html">
-                                          <br class="hidden-xs">Novità</a>
-                                        </li>                
-                                      <li>
-                                        <a href="contact-category.html">
-                                        <br class="hidden-xs">Social</a>
-                                    </li>
-                                    </ul><!-- #nav-list -->
-                                </div><!-- .collapse .navbar-collapse -->
-                             </div><!-- .container -->
-                         </nav><!-- #header-nav -->
-                  </header>
+                    </div> 
+                </div>
+            </div> 
+        </nav> 
 
-                    <div class="container" id="experience-content" >
+
+                    <div class="container experience-content">
                         <h2 class="text-center">Esperienza Formativa</h2>
-                        <p class="paragrafo" id="experience-description">In questo capitolo del sito si trovano le mie esperienze scolastiche e formative, buona lettura!</p>
+                        <p class="paragrafo description">In questo capitolo del sito si trovano le mie esperienze scolastiche e formative, buona lettura!</p>
                         <h3 class="text-center">Esperienze recenti</h3>
                         <p class="paragrafo">
-                        Nel 2020 ho compiuto un'esperienza di studio all'estero della durata di due mesi in una scuola Irlandese per interesse personale e per migliorare il mio inglese a livello grammaticale e comunicativo. Il corso da me frequentato prevedeva lezioni mattutine incentrate sulla grammatica, l'ascolto e la produzione  scritta. Per quanto riguarda il corso pomeridiano la pronuncia e la comunicazione erano le priorità.
+                        Nel 2020 ho compiuto un'esperienza di studio all'estero della durata di due mesi in una scuola Irlandese. Il corso da me frequentato prevedeva lezioni mattutine incentrate sulla grammatica, l'ascolto e la produzione  scritta. Per quanto riguarda il corso pomeridiano la pronuncia e la comunicazione erano le priorità.
                         La vita in Irlanda mi ha reso totalmente indipendente nella comunicazione quotidiana con altri stranieri. Ho ottenuto, come attestato dalla scuola, un livello pari a B2 (medio-avanzato).</p>
                         <p class="paragrafo">
                         L'esperienza in Irlanda è durata soltanto due mesi a causa coronavirus. Tornato in Italia mi sono dedicato inizialmente allo studio del CMS <b>Wordpress</b>, partecipando e completando un corso del noto sito web <b>SOS WP</b>. Successivamente a questo corso ho iniziato a studiare vari linguaggi informatici come <b>HTML,CSS e Javascript</b> sfruttando il portale Coursera e formandomi autonomamente. Il risultato finora? Non è altro che questo sito web personale creato da me stesso.
@@ -85,42 +63,40 @@
                         e altre materie prettamente di indirizzo tecnico industriale.</p>
                 
  			        
-                </div><!----- end of the main content -->
+                </div><!----- end of the experience content -->
 
 
 
-                <footer class="panel-footer">
-                	<div class="container">
-                		<div class="row">
-                			<section id="social" class="col-sm-4">
-                              <div id="button-whatsapp" class="pull-left">
+      <footer class="panel-footer">
+                    <div class="container">
+                        <div class="row">
+                            <section class="col-sm-4 social">
+                              <div class="pull-left">
                                 <a href="https://wa.me/+393494751895" target="blank"><img src="images/whatsapp_button.svg"> 
                                 </a>
                               </div>
-                            <div id="button-instagram">
+                              <div>
                                <a href="https://www.instagram.com/mr.lucadavanzo" target="blank"><img src="images/instagram_button.svg">
                                 </a>
                             </div>
-                            <div id="button-email">
+                            <div>
                                 <a href="mailto:lucadavanzo94@hotmail.it"><img src="images/email_button.svg">
                                 </a>
                             </div>
                             <hr class="visible-xs">
-                		</section>
-                			  <section id="contatti" class="col-sm-4">
-                                <span>Cellulare</span><br><a href="tel:+ 39 3494751895">+ 39 3494751895</a><br>
-                                <span>Email</span><br>
-                                    <a href="mailto:lucadavanzo94@hotmail.it">lucadavanzo94@hotmail.it</a>                      
-                             <hr class="visible-xs">
                             </section>
-                			<section id="affidabilità" class="col-sm-4">
-                				<span>Informazioni</span>
-                                <p>Questo sito è stato pensato, progettato e realizzato unicamente dal sottoscritto, utilizzando HTML, CSS e Javascript. I miei siti web vengono pensati inizialmente per la versione desktop e in fase di costruzione adattati alla versione mobile. Le parole d'ordine sono: velocità, semplicità ed eleganza.</p>
+                            <section class="col-sm-4 copyright">
+                                <p>Breve introduzione al mio sito web personale:</p>
+                                <p>Un modo professionale e alternativo per presentare se stessi. Con questo sito web voglio illustrare il mio pensiero e le mie idee di design applicando le mie passioni: fotografia e web developing, mostrando l'ordine e organizzazione che mi contraddistingue. </p>
+                            </section>
+                            <section class="col-sm-4 copyright">
+                                <p>Questo sito è stato pensato, progettato e realizzato unicamente dal sottoscritto, utilizzando HTML, CSS e Javascript. I miei siti web vengono sviluppati inizialmente per la versione desktop e in fase di costruzione adattati alla versione mobile. Le parole d'ordine sono: velocità, semplicità ed eleganza.</p>
                                 <p>&copy; Tutti i diritti riservati. Copyright mr.lucadavanzo 2021</p>
-                			</section>
-                		</div>
-                	</div>
+                            </section>
+                        </div>
+                    </div>
                 </footer>
+
             <a href="#inizio">
             <div id="tornasu">
             <img src="images/up.svg">
