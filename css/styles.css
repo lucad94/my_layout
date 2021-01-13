@@ -439,14 +439,6 @@ transition: opacity .5s, visibility .5s;
 .contact-content {
 	 background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("images/background.jpg");
 }
-.contact-content h2 {
-	margin-bottom: 5%;
-}
-.contact-content p {
-	margin-bottom: 10%;
-	color: #690808;
-	font-size: 4em;
-}
 .contact-content a:hover, .contact-content a:visited, .contact-content a:focus, .contact-content a:active {
 	text-decoration: none;
 }
