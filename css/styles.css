@@ -514,7 +514,7 @@ transition: opacity .5s, visibility .5s;
 		top: -3em;
 }
 /* MAIN CONTENT */
-#home-tiles {
+	#home-tiles {
 	width: 100%;
 }
 }
