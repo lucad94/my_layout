@@ -1,6 +1,6 @@
 body {
-	font-family: 'Teko', sans-serif;
-	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
 	background-image: url('../images/background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -89,8 +89,9 @@ pointer-events: auto;
 
 /* HEADER */
 #header-nav {
-	background-color: #E1DEDE;
+	background-color: transparent;
 	height: 250px;
+	border: 0;
 }
 .nav {
 width: 320px;
@@ -111,7 +112,7 @@ z-index: 2000;
 .nav-toggle {
 position: absolute;
 left: 320px;
-top: 1em;
+top: 0;
 padding: 0.5em;
 background: inherit;
 color: #E1DEDE;
@@ -296,11 +297,11 @@ transition: opacity .5s, visibility .5s;
 /* END HEADER */
 
 /* HOMEPAGE */
-#work-tile:focus, #info-tile:focus, #experience-tile:focus, #gallery-tile:focus, #contact-tile:focus {
+#idea-tile:focus, #bio-tile:focus, #experience-tile:focus, #portfolio-tile:focus, #social-tile:focus {
 	opacity: 100%;
 }
 
-#work-tile, #info-tile, #experience-tile, #gallery-tile, #contact-tile {
+#idea-tile, #bio-tile, #experience-tile, #portfolio-tile, #social-tile {
 	height: 250px;
 	width: 100%;
 	margin-bottom: 15px;
@@ -312,16 +313,16 @@ transition: opacity .5s, visibility .5s;
 .zoom:hover {
 	transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-#work-tile:hover, #info-tile:hover, #experience-tile:hover, #gallery-tile:hover, #contact-tile:hover {
+#idea-tile:hover, #bio-tile:hover, #experience-tile:hover, #portfolio-tile:hover, #social-tile:hover {
 	opacity: 100%;
 }
 
-#work-tile {
+#idea-tile {
 	background:url('../images/work_tile.svg') no-repeat;
 	background-position: center;
 	background-size: cover;
 }
-#info-tile {
+#bio-tile {
 	background:url('../images/info_tile.svg') no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -331,18 +332,18 @@ transition: opacity .5s, visibility .5s;
 	background-position: center;
 	background-size: cover;
 }
-#gallery-tile {
+#portfolio-tile {
 	background:url('../images/gallery_tile.svg') no-repeat;
 	background-position: center;
 	background-size: cover;
 }
-#contact-tile {
+#social-tile {
 	background:url('../images/contact_tile.svg') no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
-#work-tile p, #info-tile p, #experience-tile p, #gallery-tile p, #contact-tile p {
+#idea-tile p, #bio-tile p, #experience-tile p, #portfolio-tile p, #social-tile p {
 	font-family: 'Goldman', cursive;
 	position: absolute;
 	bottom: 0;
@@ -382,17 +383,14 @@ transition: opacity .5s, visibility .5s;
  .paragrafo {
  	font-size: 1.3em;
 	margin-top: 5%;
-	margin-right: 25%;
-	margin-left: 25%;
 	color: #000000;
-	margin-top: 50px;
 	line-height: 1.5em;
 }	
     h2, h3 {
     font-family: 'Goldman', cursive;
 	color: #000000;
 	opacity: 90%;
-	font-size: 1.5em;
+	font-size: 2em;
 	text-transform: uppercase;
 	font-style: bold;
 	margin-top:5%;
@@ -409,7 +407,6 @@ transition: opacity .5s, visibility .5s;
 
 /* EXPERIENCE PAGE */
  .description:first-letter {
-  font-family: 'Goldman', cursive;
   text-shadow: 1px 1px 1px #000000;
   display: block;
   float: left;
@@ -441,7 +438,13 @@ transition: opacity .5s, visibility .5s;
 }
 /******* large devices only ********/
 @media (min-width: 1200px) {
-
+	.ch-info {
+		left: 70em;
+	}
+	.paragrafo {
+		margin-right: 20%;
+		margin-left: 20%;
+	}
 }
 
 
@@ -449,8 +452,12 @@ transition: opacity .5s, visibility .5s;
 /********* medium devices only ********/
 @media (min-width: 992px) and (max-width: 1199px) {
 	/* HEADER */
-	.ch-info {
-		left: 45em;
+		.ch-info {
+		left: 55em;
+	}
+		.paragrafo {
+		margin-right: 20%;
+		margin-left: 20%;
 	}
 }
 
@@ -459,8 +466,12 @@ transition: opacity .5s, visibility .5s;
 @media (min-width: 768px) and (max-width: 991px) {
 		/* HEADER */
 		.ch-info {
-			left: 33em;
+			left: 40em;
 		}
+		.paragrafo {
+		margin-right: 20%;
+		margin-left: 20%;
+	}
 }
 
 
@@ -468,12 +479,12 @@ transition: opacity .5s, visibility .5s;
 @media (max-width: 767px) {
 	/* HEADER */
 	.ch-info {
-		left: 25em;
+		left: 29em;
 		top: -7em;
 	}
 
 	/* MAIN CONTENT */
-	#work-tile, #info-tile, #experience-tile, #gallery-tile, #contact-tile {
+	#idea-tile, #bio-tile, #experience-tile, #portfolio-tile, #social-tile {
 		margin-bottom: 20%;
 	}
 	#home-tiles {
