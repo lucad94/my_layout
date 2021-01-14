@@ -50,23 +50,25 @@ transform: scale(1.5);
 transition: all 0.4s ease-in-out 0.2s;
 }
 .ch-img-1 {
-background-image: url('../images/main_logo.svg');
+ background-image: url('../images/main_logo.svg');
 }
 .ch-info h4 a {
+font-family: 'Goldman', cursive;
 color: #000000;
 text-transform: uppercase;
 letter-spacing: 2px;
-font-size: 1.3em;
+font-size: 1em;
 margin: 0 15px;
 padding: 20px 0 0 0;
 height: 20px;
 font-style: bold;
 }
 .ch-info p {
+font-family: 'Goldman', cursive;
 color: #000000;
 padding: 10px 5px 0;
 margin: 0 30px;
-font-size: 1.5em;
+font-size: 1em;
 border-top: 1px solid rgba(255,255,255,0.5);
 display: block;
 text-transform: uppercase;
@@ -371,6 +373,11 @@ transition: opacity .5s, visibility .5s;
 .social a:hover {
 	opacity: 30%;
 }
+.intro {
+	position: relative;
+	right: 5%;
+	margin-top: 15px;
+}
 .copyright p:nth-child(2) {
 	margin-top: 25px;
 }
@@ -494,6 +501,11 @@ transition: opacity .5s, visibility .5s;
 	#loading {
 		width: 50%;
 	}
+	/* FOOTER */
+	.intro {
+		position: relative;
+		left: 1%;
+	}
 
 }
 /***** extra small + devices only ******/
@@ -510,7 +522,7 @@ transition: opacity .5s, visibility .5s;
 @media (max-width: 479px) {
 	/* HEADER */
 	.ch-info {
-		left: 6em;
+		left: 7em;
 		top: -3em;
 }
 /* MAIN CONTENT */
